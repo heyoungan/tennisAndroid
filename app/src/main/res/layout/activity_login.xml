@@ -1,0 +1,66 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:padding="16dp"
+    android:background="@color/white"
+    android:gravity="center"
+    tools:context=".LoginActivity">
+
+    <ImageView
+        android:id="@+id/imageView"
+        android:layout_width="316dp"
+        android:layout_height="333dp"
+        android:contentDescription="@null"
+        android:src="@drawable/loginimage" />
+
+    <EditText
+        android:id="@+id/editTextUsername"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="32dp"
+        android:hint="e-mail"
+        android:minHeight="48dp"
+        android:padding="12dp" />
+
+    <EditText
+        android:id="@+id/editTextPassword"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="30dp"
+        android:hint="Password"
+        android:inputType="textPassword"
+        android:minHeight="48dp"
+        android:padding="12dp" />
+
+    <Button
+        android:id="@+id/buttonLogin"
+        android:layout_width="241dp"
+        android:layout_height="52dp"
+        android:layout_marginTop="32dp"
+        android:backgroundTint="#F5E6CC"
+        android:text="로그인"
+        android:textColor="@android:color/white"
+        android:textStyle="bold" />
+
+    <Button
+        android:id="@+id/buttonSignUp"
+        android:layout_width="237dp"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="16dp"
+        android:backgroundTint="#70B57F"
+        android:text="회원가입"
+        android:textStyle="bold"
+        android:textColor="@android:color/white"
+       />
+
+    <TextView
+        android:id="@+id/textViewResult"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text=""
+        android:textColor="@android:color/holo_red_light"
+        android:layout_marginTop="16dp" />
+</LinearLayout>

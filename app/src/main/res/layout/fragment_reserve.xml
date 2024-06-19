@@ -1,0 +1,126 @@
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:fillViewport="true"
+    tools:context=".ReserveFragment"
+    android:background="#FFFDF8">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:padding="16dp">
+
+        <com.prolificinteractive.materialcalendarview.MaterialCalendarView
+            android:id="@+id/calendarView"
+            android:layout_width="match_parent"
+            android:layout_height="271dp"
+            android:layout_marginBottom="16dp"
+            tools:ignore="MissingClass" />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="시작시간"
+            android:textSize="16sp"
+            android:layout_marginBottom="8dp"
+            android:textColor="#000000" />
+
+        <GridLayout
+            android:id="@+id/timeGridLayout"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="16dp"
+            android:columnCount="3">
+
+            <com.google.android.material.button.MaterialButton
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_columnWeight="1"
+                android:layout_margin="4dp"
+                android:minWidth="48dp"
+                android:minHeight="48dp"
+                android:text="12:00"
+                android:backgroundTint="#A3D4F7"
+                android:textColor="@android:color/white" />
+
+            <com.google.android.material.button.MaterialButton
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_columnWeight="1"
+                android:layout_margin="4dp"
+                android:minWidth="48dp"
+                android:minHeight="48dp"
+                android:text="14:00"
+                android:backgroundTint="#A3D4F7"
+                android:textColor="@android:color/white" />
+
+            <com.google.android.material.button.MaterialButton
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_columnWeight="1"
+                android:layout_margin="4dp"
+                android:minWidth="48dp"
+                android:minHeight="48dp"
+                android:text="16:00"
+                android:backgroundTint="#A3D4F7"
+                android:textColor="@android:color/white" />
+        </GridLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            android:layout_marginBottom="16dp">
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="인원"
+                android:textSize="16sp"
+                android:layout_marginRight="16dp"
+                android:textColor="#000000" />
+
+            <Button
+                android:id="@+id/decreasePersonButton"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="-"
+                android:minWidth="48dp"
+                android:minHeight="48dp"
+                android:backgroundTint="#A3D4F7"
+                android:textColor="@android:color/white" />
+
+            <TextView
+                android:id="@+id/personCountTextView"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="0"
+                android:textSize="16sp"
+                android:layout_marginHorizontal="16dp"
+                android:textColor="#000000" />
+
+            <Button
+                android:id="@+id/increasePersonButton"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="+"
+                android:minWidth="48dp"
+                android:minHeight="48dp"
+                android:backgroundTint="#A3D4F7"
+                android:textColor="@android:color/white" />
+        </LinearLayout>
+
+        <Button
+            android:id="@+id/reserveButton"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="16dp"
+            android:backgroundTint="#70B57F"
+            android:minWidth="48dp"
+            android:minHeight="48dp"
+            android:text="예약하기"
+            android:textColor="@android:color/white" />
+    </LinearLayout>
+</ScrollView>
